@@ -1,0 +1,28 @@
+SMAP
+viewPatient_jsp.java
+JSP
+*S JSP
+*F
++ 0 viewPatient.jsp
+viewPatient.jsp
++ 1 header.jsp
+includes/header.jsp
++ 2 leftnav.jsp
+includes/leftnav.jsp
++ 3 footer.jsp
+includes/footer.jsp
+*L
+5,29:64
+5#1,21:93
+25:274,5
+25,7:116
+33#0,4:122
+5#2,23:126
+36#0,7:148
+43,63:156
+105,2:219
+107:221,3
+108,11:224
+1#3,18:235
+118#0,5:252
+*E
