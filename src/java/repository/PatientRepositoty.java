@@ -1,6 +1,5 @@
 package repository;
 
-import classes.Patient;
 import db.DbConnection;
 import static java.lang.System.out;
 import java.sql.ResultSet;
@@ -818,7 +817,7 @@ public List<String> getPatientBasicDetails(int id) throws SQLException{    //get
         ResultSet data = connection.getData("SELECT * FROM patient WHERE patient.num='"+id+"'");
         System.out.println(connection);
     while(data.next()){
-        patientList.add("<div class=\"divtext\">  If Other         :   "+data.getString(37)+"</div><div style=\" height:20px\"></div><div class=\"divtext\">  Tenderness   :   "+data.getString(38)+"</div><div class=\"divtext\">__________________________</div><div style=\" height:20px\"></div><div class=\"divtext\">  Other General Examination   :   "+data.getString(39)+"</div><div class=\"divtext\">__________________________</div>");
+        patientList.add("<div class=\"divtext\">  If Other         :   "+data.getString(37)+"</div><div style=\" height:20px\"></div><div class=\"divtext\">  Tenderness   :   "+data.getString(38)+"</div><div class=\"divtext\">__________________________</div><div style=\" height:20px\"></div><div class=\"divtext\">  Other General Examination   :   "+data.getString(39)+"</div>");
         patientList.add("<div class=\"divtext\"></div>");
         patientList.add("<div class=\"divtext\">________________________________________________________</div>");
         patientList.add("<div class=\"divtext\">--------------------------------------------------------------------------------------</div>");
@@ -827,7 +826,7 @@ public List<String> getPatientBasicDetails(int id) throws SQLException{    //get
         patientList.add("<div class=\"divtext\"> </div>");
         patientList.add("<div class=\"divtext\">  Cayanosis         :   "+data.getString(40)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  Blood Pressure High   :   "+data.getString(41)+"</div><div class=\"divtext\"></div><div class=\"divtext\"> Blood Pressure Low    :   " +data.getString(42)+ "</div><div class=\"divtext\"></div><div class=\"divtext\"> Pulse Rate    :   " +data.getString(43)+ "</div><div class=\"divtext\"></div><div class=\"divtext\">  Volume   :   "+data.getString(44)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  Character   :   "+data.getString(45)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  Rhythm         :   "+data.getString(46)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  JVP         :   "+data.getString(47)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  CRFT         :   "+data.getString(48)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  Peripheral         :   "+data.getString(49)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  Precordium Scars         :   "+data.getString(50)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  Chest Wall Deformalities         :   "+data.getString(51)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  If yes         :   "+data.getString(52)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  Visible Pulsation         :   "+data.getString(53)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  If yes        :   "+data.getString(54)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  Apex Beat         :   "+data.getString(55)+"</div><div class=\"divtext\"></div><div class=\"divtext\"> Dual Rhythm         :   "+data.getString(56)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  3rd Heart Sound         :   "+data.getString(57)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  4th Heart Sound         :   "+data.getString(58)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  Murmurs         :   "+data.getString(59)+"</div><div class=\"divtext\"></div><div class=\"divtext\">  Other         :   "+data.getString(60)+"</div>");
         patientList.add("<div class=\"divtext\"></div>");
-        patientList.add("<div class=\"divtext\">__________________________</div>");
+    //    patientList.add("<div class=\"divtext\">__________________________</div>");
         patientList.add("<div class=\"divtext\"></div>");
         patientList.add("<div class=\"divtext\"></div>");
         patientList.add("<div class=\"divtext\">________________________________________________________</div>");
@@ -992,7 +991,7 @@ public List<String> getPatientBasicDetails(int id) throws SQLException{    //get
         ResultSet data = connection.getData("SELECT * FROM patient WHERE patient.num='"+id+"'");
         System.out.println(connection);
     while(data.next()){
-        patientList.add("<div class=\"divtext\">  Ballotable         :   "+data.getString(70)+"</div><div style=\" height:20px\"></div><div >______________________________</div><div class=\"divtext\">  Free Fluid   :   "+data.getString(71)+"</div><div class=\"divtext\"></div><div style=\" height:20px\"></div><div class=\"divtext\">  Dullness   :   "+data.getString(72)+"</div><div class=\"divtext\"></div><div style=\" height:20px\"></div><div class=\"divtext\">  Bowel Sounds   :   "+data.getString(73)+"</div><div class=\"divtext\"></div><div style=\" height:20px\"></div><div class=\"divtext\">  Other Abdomen   :   "+data.getString(74)+"</div><div class=\"divtext\">__________________________</div>");
+        patientList.add("<div class=\"divtext\">  Ballotable         :   "+data.getString(70)+"</div><div style=\" height:20px\"></div><div >______________________________</div><div class=\"divtext\">  Free Fluid   :   "+data.getString(71)+"</div><div class=\"divtext\"></div><div style=\" height:20px\"></div><div class=\"divtext\">  Dullness   :   "+data.getString(72)+"</div><div class=\"divtext\"></div><div style=\" height:20px\"></div><div class=\"divtext\">  Bowel Sounds   :   "+data.getString(73)+"</div><div class=\"divtext\"></div><div style=\" height:20px\"></div><div class=\"divtext\">  Other Abdomen   :   "+data.getString(74)+"</div>");
         
     }    
     } catch(ClassNotFoundException | SQLException e){
