@@ -97,6 +97,7 @@ public class EnterIx extends HttpServlet {
         
         String age = request.getParameter("age");
         String organ = request.getParameter("organ");
+        String nic_no = request.getParameter("nic_no");
         
         String low   = request.getParameter("low");
         String index = request.getParameter("index");
@@ -107,13 +108,13 @@ public class EnterIx extends HttpServlet {
         boolean isExecuted = patientRepository.insertInvestigationReport(num, day_ix, date_ix, time_ix, bldtx, hb, plt, pcv, wbc, n, l, esr, crp, bu, scr, na, k, ca, mg, cl, rbs, cbs, ast, alt, alp, sprotien, alb, glob, inr, pt, aptt, sbrtot, dir, urine, cxr, us, ct, ecg, cultures_blood, cultures_sputum, cultures_urine, otherix, planned);
        // response.sendRedirect("updatePatient2.jsp?&num="+numm);
         if("nic".equals(type)){
-            response.sendRedirect("updatePatient2.jsp?&num="+numm+"&begin="+begin); 
+            response.sendRedirect("updatePatient2Nic.jsp?&num="+numm+"&begin="+begin+"&nic_no="+nic_no+"&type="+type); 
         }
         else if("age".equals(type)){
             response.sendRedirect("updatePatient2Age.jsp?&num="+numm+"&index="+index+"&age="+age+"&type="+type); 
         }
         else if("organ".equals(type)){
-            response.sendRedirect("updatePatient2.jsp?&num="+numm+"&start="+start+"&organ="+organ+"&type="+type); 
+            response.sendRedirect("updatePatient2Organ.jsp?&num="+numm+"&start="+start+"&organ="+organ+"&type="+type); 
         }
         else{
             response.sendRedirect("updatePatient2.jsp?&num="+numm+"&low="+low); 

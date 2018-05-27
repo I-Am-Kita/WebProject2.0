@@ -1,8 +1,9 @@
 <%-- 
-    Document   : updatePatient2Organ
-    Created on : May 27, 2018, 6:44:37 PM
+    Document   : updatePatient2Nic
+    Created on : May 27, 2018, 7:45:34 PM
     Author     : ROBIN
 --%>
+
 <%@page import="java.util.List"%>
 <%@page import="repository.PatientRepositoty"%>
 <!DOCTYPE html>
@@ -82,10 +83,10 @@
                                         %>">
                             </li>
                             <li>
-                                <input  type="hidden" name="organ" value="<%
+                                <input  type="hidden" name="nic_no" value="<%
                                     try {
-                                         String organ = request.getParameter("organ");
-                                        out.print(organ);
+                                         String nic_no = request.getParameter("nic_no");
+                                        out.print(nic_no);
                                                      
                                         } catch (Exception e) {
                                             e.printStackTrace();
@@ -93,10 +94,10 @@
                                         %>">
                             </li>
                             <li>
-                                <input  type="hidden" name="start" value="<%
+                                <input  type="hidden" name="begin" value="<%
                                     try {
-                                         String start = request.getParameter("start");
-                                        out.print(start);
+                                         String begin = request.getParameter("begin");
+                                        out.print(begin);
                                                      
                                         } catch (Exception e) {
                                             e.printStackTrace();
@@ -541,9 +542,9 @@
                                 
                                 
                             </div>
-            <div><a href="searchPatientByOrganTypeResults.jsp?&o_type=<%  String o_type = request.getParameter("organ"); 
-                                                out.println(o_type);%>&start=<%   String start = request.getParameter("start");
-                                                out.println(start);
+            <div><a href="searchPatientByGuardianNICResults.jsp?&nic_no=<%  String nic_no = request.getParameter("nic_no"); 
+                                                out.println(nic_no);%>&begin=<%   String begin = request.getParameter("begin");
+                                                out.println(begin);
                                                 %>"><button class="button">Back</button></a></div>
                             
                         </div>
