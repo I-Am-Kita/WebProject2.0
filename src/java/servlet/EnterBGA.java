@@ -61,9 +61,35 @@ public class EnterBGA extends HttpServlet {
         String so2= request.getParameter("so2");
         String be= request.getParameter("be");
         
+        String type= request.getParameter("type");
+        
+        String age = request.getParameter("age");
+        String organ = request.getParameter("organ");
+        String nic_no = request.getParameter("nic_no");
+        
+        String low   = request.getParameter("low");
+        String index = request.getParameter("index");
+        String begin = request.getParameter("begin");
+        String start = request.getParameter("start");
+        
+        
         PatientRepositoty patientRepository = new PatientRepositoty();
         patientRepository.insertBloodGasAnalysis(num, day_ix, date_ix, time_ix, abg, vbg, ph, pco2, hco3, po2, so2, be);
-        response.sendRedirect("updatePatient3.jsp?num="+numm); 
+        //response.sendRedirect("updatePatient3.jsp?num="+numm); 
+        
+        if("nic".equals(type)){
+            response.sendRedirect("updatePatient3Nic.jsp?&num="+numm+"&begin="+begin+"&nic_no="+nic_no+"&type="+type); 
+        }
+        else if("age".equals(type)){
+            response.sendRedirect("updatePatient3Age.jsp?&num="+numm+"&index="+index+"&age="+age+"&type="+type); 
+        }
+        else if("organ".equals(type)){
+            response.sendRedirect("updatePatient3Organ.jsp?&num="+numm+"&start="+start+"&organ="+organ+"&type="+type); 
+        }
+        else{
+            response.sendRedirect("updatePatient3.jsp?&num="+numm+"&low="+low); 
+        } 
+        
     }
 
     @Override

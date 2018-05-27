@@ -532,7 +532,9 @@
                                 
                                 
                             </div>
-                            
+                           <div><a href="viewAllPatients.jsp?&low=<%   String low = request.getParameter("low");
+                                                out.println(low);
+                                                %>"><button class="button">Back</button></a></div> 
                         </div>
                    
 
