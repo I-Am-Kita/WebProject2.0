@@ -1,6 +1,6 @@
 <%-- 
-    Document   : updatePatient3
-    Created on : Apr 28, 2018, 11:21:12 PM
+    Document   : updatePatient3Nic
+    Created on : May 28, 2018, 12:03:11 AM
     Author     : ROBIN
 --%>
 
@@ -71,11 +71,33 @@
 			<div class="container" style="width:100%;"> 
                          <ul style = ' width: 450px'>
             <li style="height: 30px"></li>
-                <li>
+                            <li>
                                 <input  type="hidden" name="num" value="<%
                                     try {
-                                        int num = Integer.parseInt(request.getParameter("num"));
-                                        out.print(num);
+                                            int num = Integer.parseInt(request.getParameter("num"));
+                                            out.print(num);
+
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
+                                            %>">
+                            </li>
+                            <li>
+                                <input  type="hidden" name="nic_no" value="<%
+                                    try {
+                                         String nic_no = request.getParameter("nic_no");
+                                        out.print(nic_no);
+                                                     
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
+                                        %>">
+                            </li>
+                            <li>
+                                <input  type="hidden" name="begin" value="<%
+                                    try {
+                                         String begin = request.getParameter("begin");
+                                        out.print(begin);
                                                      
                                         } catch (Exception e) {
                                             e.printStackTrace();
@@ -87,17 +109,6 @@
                                     try {
                                         String type = request.getParameter("type");
                                         out.print(type);
-                                                     
-                                        } catch (Exception e) {
-                                            e.printStackTrace();
-                                        }
-                                        %>">
-                            </li>
-                            <li>
-                                <input  type="hidden" name="low" value="<%
-                                    try {
-                                        String low = request.getParameter("low");
-                                        out.print(low);
                                                      
                                         } catch (Exception e) {
                                             e.printStackTrace();
@@ -238,11 +249,12 @@
                     e.printStackTrace();
                 }
                 %>
-                <div><a href="viewAllPatients.jsp?&low=<%   String low = request.getParameter("low");
-                                                out.println(low);
-                                                %>"><button class="button">Back</button></a></div>
+                <div><a href="searchPatientByGuardianNICResults.jsp?&nic_no=<%  String nic_no = request.getParameter("nic_no"); 
+                                                out.println(nic_no);%>&begin=<%   String begin = request.getParameter("begin");
+                                                out.println(begin);
+                                                %>"><button class="button">Back</button></a></div> 
                         </div>
-                   
+                 
               
             </div>
         </div>

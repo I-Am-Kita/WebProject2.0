@@ -81,7 +81,29 @@
                                             e.printStackTrace();
                                         }
                                         %>">
-                </li>
+                            </li>
+                            <li>
+                                <input  type="hidden" name="type" value="<%
+                                    try {
+                                        String type = request.getParameter("type");
+                                        out.print(type);
+                                                     
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
+                                        %>">
+                            </li>
+                            <li>
+                                <input  type="hidden" name="low" value="<%
+                                    try {
+                                        String low = request.getParameter("low");
+                                        out.print(low);
+                                                     
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
+                                        %>">
+                            </li>
                 <li>
                     <span><label class="description" for="day_bga" style="width: 100px">DAY</label></span>
                     <span style="width: 100px"></span>
@@ -216,7 +238,9 @@
                     e.printStackTrace();
                 }
                 %>
-                
+                <div><a href="viewAllPatients.jsp?&low=<%   String low = request.getParameter("low");
+                                                out.println(low);
+                                                %>"><button class="button">Back</button></a></div>
                         </div>
                    
               
