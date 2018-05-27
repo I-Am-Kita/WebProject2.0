@@ -53,13 +53,13 @@ window.onload =function myFunction() {
         y.style.display = "none";
         z.style.display = "none";
     }else{
-        t.style.display = "inline";
-        u.style.display = "inline";
-        v.style.display = "inline";
-        w.style.display = "inline";
-        x.style.display = "inline";
-        y.style.display = "inline";
-        z.style.display = "inline";
+        t.style.display = "none";
+        u.style.display = "none";
+        v.style.display = "none";
+        w.style.display = "none";
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "none";
     }
 }
 </script>
