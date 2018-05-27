@@ -209,7 +209,7 @@
                                                 } catch (Exception e) {
                                                     e.printStackTrace();
                                                          }
-                                            %>" required="required" pattern="[0-9]{2}">
+                                            %>" required="required" pattern="[0-9]">
                                     </li>
                                     <li style="height:40px;" > </li> 
                                     
