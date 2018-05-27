@@ -82,10 +82,10 @@
                                         %>">
                             </li>
                             <li>
-                                <input  type="hidden" name="age" value="<%
+                                <input  type="hidden" name="organ" value="<%
                                     try {
-                                         String age = request.getParameter("age");
-                                        out.print(age);
+                                         String organ = request.getParameter("organ");
+                                        out.print(organ);
                                                      
                                         } catch (Exception e) {
                                             e.printStackTrace();
@@ -93,10 +93,10 @@
                                         %>">
                             </li>
                             <li>
-                                <input  type="hidden" name="index" value="<%
+                                <input  type="hidden" name="start" value="<%
                                     try {
-                                         String index = request.getParameter("index");
-                                        out.print(index);
+                                         String start = request.getParameter("start");
+                                        out.print(start);
                                                      
                                         } catch (Exception e) {
                                             e.printStackTrace();

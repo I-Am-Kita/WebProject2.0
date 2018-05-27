@@ -67,9 +67,7 @@ td {
     text-align: center;
 }
 </style>
-        
-    </head>
-        <script type="text/javascript">
+<script type="text/javascript">
 function confirm_alert(node) {
     return confirm("Do you want to remove this patient ?");
 }
@@ -77,7 +75,9 @@ function confirm_alert(node) {
 function confirm_print(node) {
     return confirm("Do you want to print details of this patient ?");
 }
-</script>
+</script>        
+    </head>
+
     <body>
         <link rel="stylesheet" href="css/header.css"/>
         <%@include file="includes/header.jsp" %>

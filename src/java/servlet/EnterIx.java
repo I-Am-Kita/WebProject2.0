@@ -96,6 +96,7 @@ public class EnterIx extends HttpServlet {
         String type= request.getParameter("type");
         
         String age = request.getParameter("age");
+        String organ = request.getParameter("organ");
         
         String low   = request.getParameter("low");
         String index = request.getParameter("index");
@@ -112,7 +113,7 @@ public class EnterIx extends HttpServlet {
             response.sendRedirect("updatePatient2Age.jsp?&num="+numm+"&index="+index+"&age="+age+"&type="+type); 
         }
         else if("organ".equals(type)){
-            response.sendRedirect("updatePatient2.jsp?&num="+numm+"&start="+start); 
+            response.sendRedirect("updatePatient2.jsp?&num="+numm+"&start="+start+"&organ="+organ+"&type="+type); 
         }
         else{
             response.sendRedirect("updatePatient2.jsp?&num="+numm+"&low="+low); 
