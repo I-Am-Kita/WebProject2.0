@@ -251,7 +251,10 @@
                 %>
                 
                         </div>
-                   
+                 <div><a href="searchPatientByAgeResults.jsp?&age=<%  String age = request.getParameter("age"); 
+                                                out.println(age);%>&index=<%   String index = request.getParameter("index");
+                                                out.println(index);
+                                                %>"><button class="button">Back</button></a></div>  
               
             </div>
         </div>
