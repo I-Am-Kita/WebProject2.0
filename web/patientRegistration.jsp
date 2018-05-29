@@ -35,7 +35,7 @@
 					<label class="description">Name </label>
                                             <span>
 						<input name= "initials" class="text" maxlength="45" size="10" value="" required="required"  pattern="[A-Za-z]+"/>
-						<label for="street">First</label>
+						<label for="street">Initials</label>
                                             </span>
                                             <span>
 						<input name= "surname" class="text" maxlength="45" size="26" value="" required="required" pattern="[A-Za-z]+" />

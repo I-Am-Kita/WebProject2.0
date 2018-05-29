@@ -16,7 +16,7 @@
        <div id="headerwrap">
             <div id="header">
 		<div id="logo">
-                    <img src="img/logo.jpg" width="70px" height="70px" alt="PMS logo"/>
+                    <img src="img/logo.jpg" width="70px" height="70px" alt="logo"/>
 		</div>
 		<div id="title">
                     <font face="Agency FB" color="#b5dfeb" size="6px" >Examination Database</font>
