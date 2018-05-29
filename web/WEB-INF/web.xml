@@ -85,20 +85,12 @@
         <servlet-class>servlet.WordFileWriter</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>ImageTet</servlet-name>
-        <servlet-class>pdf.ImageTet</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>EnterIx</servlet-name>
         <servlet-class>servlet.EnterIx</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>EnterBGA</servlet-name>
         <servlet-class>servlet.EnterBGA</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ImageTest2</servlet-name>
-        <servlet-class>pdf.ImageTest2</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>RegisterUser</servlet-name>
@@ -185,20 +177,12 @@
         <url-pattern>/WordFileWriter</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>ImageTet</servlet-name>
-        <url-pattern>/ImageTet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>EnterIx</servlet-name>
         <url-pattern>/EnterIx</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>EnterBGA</servlet-name>
         <url-pattern>/EnterBGA</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ImageTest2</servlet-name>
-        <url-pattern>/ImageTest2</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -48,12 +48,13 @@ td {
     text-align: center;
 }
 </style>
-    </head>
 <script type="text/javascript">
 function confirm_alert(node) {
     return confirm("Do you want to remove this user ?");
 }
 </script>
+    </head>
+
     <body>
         <link rel="stylesheet" href="css/header.css"/>
         <%@include file="includes/header.jsp" %>

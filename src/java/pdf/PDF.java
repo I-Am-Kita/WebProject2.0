@@ -1086,7 +1086,7 @@ public class PDF extends HttpServlet {
             out.println(size);
             
             PdfPTable tableIx1 = new PdfPTable(realSize);
-            PdfPCell cell = new PdfPCell(new Paragraph("Data1"));
+            PdfPCell cell = new PdfPCell(new Paragraph("Day"));
             tableIx1.addCell(cell);
             for(String i : investigationReport1){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1096,7 +1096,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport2 = new ArrayList<String>();
             investigationReport2 = pdfrepo.investigationReport2(id);
             PdfPTable tableIx2 = new PdfPTable(realSize);
-            PdfPCell cellIx2 = new PdfPCell(new Paragraph("Data2"));
+            PdfPCell cellIx2 = new PdfPCell(new Paragraph("Date"));
             tableIx2.addCell(cellIx2);
             for(String i : investigationReport2){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1106,7 +1106,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport3 = new ArrayList<String>();
             investigationReport3 = pdfrepo.investigationReport3(id);
             PdfPTable tableIx3 = new PdfPTable(realSize);
-            PdfPCell cellIx3 = new PdfPCell(new Paragraph("Data2"));
+            PdfPCell cellIx3 = new PdfPCell(new Paragraph("Time"));
             tableIx3.addCell(cellIx3);
             for(String i : investigationReport3){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1116,7 +1116,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport4 = new ArrayList<String>();
             investigationReport4 = pdfrepo.investigationReport4(id);
             PdfPTable tableIx4 = new PdfPTable(realSize);
-            PdfPCell cellIx4 = new PdfPCell(new Paragraph("Data4"));
+            PdfPCell cellIx4 = new PdfPCell(new Paragraph("BLD Tx"));
             tableIx4.addCell(cellIx4);
             for(String i : investigationReport4){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1126,7 +1126,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport5 = new ArrayList<String>();
             investigationReport5 = pdfrepo.investigationReport5(id);
             PdfPTable tableIx5 = new PdfPTable(realSize);
-            PdfPCell cellIx5 = new PdfPCell(new Paragraph("Data5"));
+            PdfPCell cellIx5 = new PdfPCell(new Paragraph("Hb %"));
             tableIx5.addCell(cellIx5);
             for(String i : investigationReport5){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1136,7 +1136,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport6 = new ArrayList<String>();
             investigationReport6 = pdfrepo.investigationReport6(id);
             PdfPTable tableIx6 = new PdfPTable(realSize);
-            PdfPCell cellIx6 = new PdfPCell(new Paragraph("Data6"));
+            PdfPCell cellIx6 = new PdfPCell(new Paragraph("PLT"));
             tableIx6.addCell(cellIx6);
             for(String i : investigationReport6){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1146,7 +1146,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport7 = new ArrayList<String>();
             investigationReport7 = pdfrepo.investigationReport7(id);
             PdfPTable tableIx7 = new PdfPTable(realSize);
-            PdfPCell cellIx7 = new PdfPCell(new Paragraph("Data7"));
+            PdfPCell cellIx7 = new PdfPCell(new Paragraph("PCV"));
             tableIx7.addCell(cellIx7);
             for(String i : investigationReport7){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1156,7 +1156,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport8 = new ArrayList<String>();
             investigationReport8 = pdfrepo.investigationReport8(id);
             PdfPTable tableIx8 = new PdfPTable(realSize);
-            PdfPCell cellIx8 = new PdfPCell(new Paragraph("Data8"));
+            PdfPCell cellIx8 = new PdfPCell(new Paragraph("WBC"));
             tableIx8.addCell(cellIx8);
             for(String i : investigationReport8){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1166,7 +1166,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport9 = new ArrayList<String>();
             investigationReport9 = pdfrepo.investigationReport9(id);
             PdfPTable tableIx9 = new PdfPTable(realSize);
-            PdfPCell cellIx9 = new PdfPCell(new Paragraph("Data9"));
+            PdfPCell cellIx9 = new PdfPCell(new Paragraph("-N"));
             tableIx9.addCell(cellIx9);
             for(String i : investigationReport9){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1176,7 +1176,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport10 = new ArrayList<String>();
             investigationReport10 = pdfrepo.investigationReport10(id);
             PdfPTable tableIx10 = new PdfPTable(realSize);
-            PdfPCell cellIx10 = new PdfPCell(new Paragraph("Data10"));
+            PdfPCell cellIx10 = new PdfPCell(new Paragraph("-L"));
             tableIx10.addCell(cellIx10);
             for(String i : investigationReport10){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1186,7 +1186,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport11 = new ArrayList<String>();
             investigationReport11 = pdfrepo.investigationReport11(id);
             PdfPTable tableIx11 = new PdfPTable(realSize);
-            PdfPCell cellIx11 = new PdfPCell(new Paragraph("Data11"));
+            PdfPCell cellIx11 = new PdfPCell(new Paragraph("ESR"));
             tableIx11.addCell(cellIx11);
             for(String i : investigationReport11){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1196,7 +1196,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport12 = new ArrayList<String>();
             investigationReport12 = pdfrepo.investigationReport12(id);
             PdfPTable tableIx12 = new PdfPTable(realSize);
-            PdfPCell cellIx12 = new PdfPCell(new Paragraph("Data12"));
+            PdfPCell cellIx12 = new PdfPCell(new Paragraph("CRP"));
             tableIx12.addCell(cellIx12);
             for(String i : investigationReport12){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1206,7 +1206,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport13 = new ArrayList<String>();
             investigationReport13 = pdfrepo.investigationReport13(id);
             PdfPTable tableIx13 = new PdfPTable(realSize);
-            PdfPCell cellIx13 = new PdfPCell(new Paragraph("Data13"));
+            PdfPCell cellIx13 = new PdfPCell(new Paragraph("BU"));
             tableIx13.addCell(cellIx13);
             for(String i : investigationReport13){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1216,7 +1216,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport14 = new ArrayList<String>();
             investigationReport14 = pdfrepo.investigationReport14(id);
             PdfPTable tableIx14 = new PdfPTable(realSize);
-            PdfPCell cellIx14 = new PdfPCell(new Paragraph("Data14"));
+            PdfPCell cellIx14 = new PdfPCell(new Paragraph("S.Cr"));
             tableIx14.addCell(cellIx14);
             for(String i : investigationReport14){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1226,7 +1226,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport15 = new ArrayList<String>();
             investigationReport15 = pdfrepo.investigationReport15(id);
             PdfPTable tableIx15 = new PdfPTable(realSize);
-            PdfPCell cellIx15 = new PdfPCell(new Paragraph("Data15"));
+            PdfPCell cellIx15 = new PdfPCell(new Paragraph("Na+"));
             tableIx15.addCell(cellIx15);
             for(String i : investigationReport15){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1236,7 +1236,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport16 = new ArrayList<String>();
             investigationReport16 = pdfrepo.investigationReport16(id);
             PdfPTable tableIx16 = new PdfPTable(realSize);
-            PdfPCell cellIx16 = new PdfPCell(new Paragraph("Data16"));
+            PdfPCell cellIx16 = new PdfPCell(new Paragraph("K+"));
             tableIx16.addCell(cellIx16);
             for(String i : investigationReport16){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1246,7 +1246,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport17 = new ArrayList<String>();
             investigationReport17 = pdfrepo.investigationReport17(id);
             PdfPTable tableIx17 = new PdfPTable(realSize);
-            PdfPCell cellIx17 = new PdfPCell(new Paragraph("Data17"));
+            PdfPCell cellIx17 = new PdfPCell(new Paragraph("Ca"));
             tableIx17.addCell(cellIx17);
             for(String i : investigationReport17){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1256,7 +1256,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport18 = new ArrayList<String>();
             investigationReport18 = pdfrepo.investigationReport18(id);
             PdfPTable tableIx18 = new PdfPTable(realSize);
-            PdfPCell cellIx18 = new PdfPCell(new Paragraph("Data18"));
+            PdfPCell cellIx18 = new PdfPCell(new Paragraph("Mg"));
             tableIx18.addCell(cellIx18);
             for(String i : investigationReport18){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1266,7 +1266,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport19 = new ArrayList<String>();
             investigationReport19 = pdfrepo.investigationReport19(id);
             PdfPTable tableIx19 = new PdfPTable(realSize);
-            PdfPCell cellIx19 = new PdfPCell(new Paragraph("Data19"));
+            PdfPCell cellIx19 = new PdfPCell(new Paragraph("Cl"));
             tableIx19.addCell(cellIx19);
             for(String i : investigationReport19){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1276,7 +1276,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport20 = new ArrayList<String>();
             investigationReport20 = pdfrepo.investigationReport20(id);
             PdfPTable tableIx20 = new PdfPTable(realSize);
-            PdfPCell cellIx20 = new PdfPCell(new Paragraph("Data20"));
+            PdfPCell cellIx20 = new PdfPCell(new Paragraph("RBS"));
             tableIx20.addCell(cellIx20);
             for(String i : investigationReport20){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1286,7 +1286,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport21 = new ArrayList<String>();
             investigationReport21 = pdfrepo.investigationReport21(id);
             PdfPTable tableIx21 = new PdfPTable(realSize);
-            PdfPCell cellIx21 = new PdfPCell(new Paragraph("Data21"));
+            PdfPCell cellIx21 = new PdfPCell(new Paragraph("CBS"));
             tableIx21.addCell(cellIx21);
             for(String i : investigationReport21){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1296,7 +1296,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport22 = new ArrayList<String>();
             investigationReport22 = pdfrepo.investigationReport22(id);
             PdfPTable tableIx22 = new PdfPTable(realSize);
-            PdfPCell cellIx22 = new PdfPCell(new Paragraph("Data22"));
+            PdfPCell cellIx22 = new PdfPCell(new Paragraph("AST"));
             tableIx22.addCell(cellIx22);
             for(String i : investigationReport22){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1306,7 +1306,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport23 = new ArrayList<String>();
             investigationReport23 = pdfrepo.investigationReport23(id);
             PdfPTable tableIx23 = new PdfPTable(realSize);
-            PdfPCell cellIx23 = new PdfPCell(new Paragraph("Data23"));
+            PdfPCell cellIx23 = new PdfPCell(new Paragraph("ALT"));
             tableIx23.addCell(cellIx23);
             for(String i : investigationReport23){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1316,7 +1316,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport24 = new ArrayList<String>();
             investigationReport24 = pdfrepo.investigationReport24(id);
             PdfPTable tableIx24 = new PdfPTable(realSize);
-            PdfPCell cellIx24 = new PdfPCell(new Paragraph("Data24"));
+            PdfPCell cellIx24 = new PdfPCell(new Paragraph("ALP"));
             tableIx24.addCell(cellIx24);
             for(String i : investigationReport24){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1326,7 +1326,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport25 = new ArrayList<String>();
             investigationReport25 = pdfrepo.investigationReport25(id);
             PdfPTable tableIx25 = new PdfPTable(realSize);
-            PdfPCell cellIx25 = new PdfPCell(new Paragraph("Data25"));
+            PdfPCell cellIx25 = new PdfPCell(new Paragraph("S.protien"));
             tableIx25.addCell(cellIx25);
             for(String i : investigationReport25){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1336,7 +1336,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport26 = new ArrayList<String>();
             investigationReport26 = pdfrepo.investigationReport26(id);
             PdfPTable tableIx26 = new PdfPTable(realSize);
-            PdfPCell cellIx26 = new PdfPCell(new Paragraph("Data26"));
+            PdfPCell cellIx26 = new PdfPCell(new Paragraph("Alb"));
             tableIx26.addCell(cellIx26);
             for(String i : investigationReport26){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1346,7 +1346,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport27 = new ArrayList<String>();
             investigationReport27 = pdfrepo.investigationReport27(id);
             PdfPTable tableIx27 = new PdfPTable(realSize);
-            PdfPCell cellIx27 = new PdfPCell(new Paragraph("Data27"));
+            PdfPCell cellIx27 = new PdfPCell(new Paragraph("Glob"));
             tableIx27.addCell(cellIx27);
             for(String i : investigationReport27){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1356,7 +1356,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport28 = new ArrayList<String>();
             investigationReport28 = pdfrepo.investigationReport28(id);
             PdfPTable tableIx28 = new PdfPTable(realSize);
-            PdfPCell cellIx28 = new PdfPCell(new Paragraph("Data28"));
+            PdfPCell cellIx28 = new PdfPCell(new Paragraph("INR"));
             tableIx28.addCell(cellIx28);
             for(String i : investigationReport28){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1366,7 +1366,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport29 = new ArrayList<String>();
             investigationReport29 = pdfrepo.investigationReport29(id);
             PdfPTable tableIx29 = new PdfPTable(realSize);
-            PdfPCell cellIx29 = new PdfPCell(new Paragraph("Data29"));
+            PdfPCell cellIx29 = new PdfPCell(new Paragraph("PT"));
             tableIx29.addCell(cellIx29);
             for(String i : investigationReport29){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1376,7 +1376,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport30 = new ArrayList<String>();
             investigationReport30 = pdfrepo.investigationReport30(id);
             PdfPTable tableIx30 = new PdfPTable(realSize);
-            PdfPCell cellIx30 = new PdfPCell(new Paragraph("Data30"));
+            PdfPCell cellIx30 = new PdfPCell(new Paragraph("APTT"));
             tableIx30.addCell(cellIx30);
             for(String i : investigationReport30){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1386,7 +1386,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport31 = new ArrayList<String>();
             investigationReport31 = pdfrepo.investigationReport31(id);
             PdfPTable tableIx31 = new PdfPTable(realSize);
-            PdfPCell cellIx31 = new PdfPCell(new Paragraph("Data31"));
+            PdfPCell cellIx31 = new PdfPCell(new Paragraph("SBR-Tot"));
             tableIx31.addCell(cellIx31);
             for(String i : investigationReport31){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1396,7 +1396,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport32 = new ArrayList<String>();
             investigationReport32 = pdfrepo.investigationReport32(id);
             PdfPTable tableIx32 = new PdfPTable(realSize);
-            PdfPCell cellIx32 = new PdfPCell(new Paragraph("Data32"));
+            PdfPCell cellIx32 = new PdfPCell(new Paragraph("SBR-Dir"));
             tableIx32.addCell(cellIx32);
             for(String i : investigationReport32){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1406,7 +1406,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport33 = new ArrayList<String>();
             investigationReport33 = pdfrepo.investigationReport33(id);
             PdfPTable tableIx33 = new PdfPTable(realSize);
-            PdfPCell cellIx33 = new PdfPCell(new Paragraph("Data33"));
+            PdfPCell cellIx33 = new PdfPCell(new Paragraph("URINE"));
             tableIx33.addCell(cellIx33);
             for(String i : investigationReport33){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1416,7 +1416,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport34 = new ArrayList<String>();
             investigationReport34 = pdfrepo.investigationReport34(id);
             PdfPTable tableIx34 = new PdfPTable(realSize);
-            PdfPCell cellIx34 = new PdfPCell(new Paragraph("Data34"));
+            PdfPCell cellIx34 = new PdfPCell(new Paragraph("CXR"));
             tableIx34.addCell(cellIx34);
             for(String i : investigationReport34){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1426,7 +1426,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport35 = new ArrayList<String>();
             investigationReport35 = pdfrepo.investigationReport35(id);
             PdfPTable tableIx35 = new PdfPTable(realSize);
-            PdfPCell cellIx35 = new PdfPCell(new Paragraph("Data35"));
+            PdfPCell cellIx35 = new PdfPCell(new Paragraph("US"));
             tableIx35.addCell(cellIx35);
             for(String i : investigationReport35){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1436,7 +1436,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport36 = new ArrayList<String>();
             investigationReport36 = pdfrepo.investigationReport36(id);
             PdfPTable tableIx36 = new PdfPTable(realSize);
-            PdfPCell cellIx36 = new PdfPCell(new Paragraph("Data36"));
+            PdfPCell cellIx36 = new PdfPCell(new Paragraph("CT"));
             tableIx36.addCell(cellIx36);
             for(String i : investigationReport36){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1446,7 +1446,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport37 = new ArrayList<String>();
             investigationReport37 = pdfrepo.investigationReport37(id);
             PdfPTable tableIx37 = new PdfPTable(realSize);
-            PdfPCell cellIx37 = new PdfPCell(new Paragraph("Data37"));
+            PdfPCell cellIx37 = new PdfPCell(new Paragraph("ECG"));
             tableIx37.addCell(cellIx37);
             for(String i : investigationReport37){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1456,7 +1456,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport38 = new ArrayList<String>();
             investigationReport38 = pdfrepo.investigationReport38(id);
             PdfPTable tableIx38 = new PdfPTable(realSize);
-            PdfPCell cellIx38 = new PdfPCell(new Paragraph("Data38"));
+            PdfPCell cellIx38 = new PdfPCell(new Paragraph("CULTURES Blood"));
             tableIx38.addCell(cellIx38);
             for(String i : investigationReport38){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1466,7 +1466,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport39 = new ArrayList<String>();
             investigationReport39 = pdfrepo.investigationReport39(id);
             PdfPTable tableIx39 = new PdfPTable(realSize);
-            PdfPCell cellIx39 = new PdfPCell(new Paragraph("Data39"));
+            PdfPCell cellIx39 = new PdfPCell(new Paragraph("CULTURES Sputum"));
             tableIx39.addCell(cellIx39);
             for(String i : investigationReport39){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1476,7 +1476,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport40 = new ArrayList<String>();
             investigationReport40 = pdfrepo.investigationReport40(id);
             PdfPTable tableIx40 = new PdfPTable(realSize);
-            PdfPCell cellIx40 = new PdfPCell(new Paragraph("Data40"));
+            PdfPCell cellIx40 = new PdfPCell(new Paragraph("CULTURES Urine"));
             tableIx40.addCell(cellIx40);
             for(String i : investigationReport40){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1486,7 +1486,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport41 = new ArrayList<String>();
             investigationReport41 = pdfrepo.investigationReport41(id);
             PdfPTable tableIx41 = new PdfPTable(realSize);
-            PdfPCell cellIx41 = new PdfPCell(new Paragraph("Data41"));
+            PdfPCell cellIx41 = new PdfPCell(new Paragraph("Other Ix"));
             tableIx41.addCell(cellIx41);
             for(String i : investigationReport41){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1496,7 +1496,7 @@ public class PDF extends HttpServlet {
             List<String> investigationReport42 = new ArrayList<String>();
             investigationReport42 = pdfrepo.investigationReport42(id);
             PdfPTable tableIx42 = new PdfPTable(realSize);
-            PdfPCell cellIx42 = new PdfPCell(new Paragraph("Data42"));
+            PdfPCell cellIx42 = new PdfPCell(new Paragraph("Planned Ix"));
             tableIx42.addCell(cellIx42);
             for(String i : investigationReport42){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1513,7 +1513,7 @@ public class PDF extends HttpServlet {
             out.println(realCap);
             
             PdfPTable tableBGA1 = new PdfPTable(realCap);
-            PdfPCell cellBGA1 = new PdfPCell(new Paragraph("BGA1"));
+            PdfPCell cellBGA1 = new PdfPCell(new Paragraph("Day"));
             tableBGA1.addCell(cellBGA1);
             for(String i : bgaReport1){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1523,7 +1523,7 @@ public class PDF extends HttpServlet {
             List<String> bgaReport2 = new ArrayList<String>();
             bgaReport2 = pdfrepo.bloodGasAnalysisReport2(id);
             PdfPTable tableBGA2 = new PdfPTable(realCap);
-            PdfPCell cellBGA2 = new PdfPCell(new Paragraph("BGA2"));
+            PdfPCell cellBGA2 = new PdfPCell(new Paragraph("Date"));
             tableBGA2.addCell(cellBGA2);
             for(String i : bgaReport2){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1533,7 +1533,7 @@ public class PDF extends HttpServlet {
             List<String> bgaReport3 = new ArrayList<String>();
             bgaReport3 = pdfrepo.bloodGasAnalysisReport3(id);
             PdfPTable tableBGA3 = new PdfPTable(realCap);
-            PdfPCell cellBGA3 = new PdfPCell(new Paragraph("BGA3"));
+            PdfPCell cellBGA3 = new PdfPCell(new Paragraph("Time"));
             tableBGA3.addCell(cellBGA3);
             for(String i : bgaReport3){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1543,7 +1543,7 @@ public class PDF extends HttpServlet {
             List<String> bgaReport4 = new ArrayList<String>();
             bgaReport4 = pdfrepo.bloodGasAnalysisReport4(id);
             PdfPTable tableBGA4 = new PdfPTable(realCap);
-            PdfPCell cellBGA4 = new PdfPCell(new Paragraph("BGA4"));
+            PdfPCell cellBGA4 = new PdfPCell(new Paragraph("ABG"));
             tableBGA4.addCell(cellBGA4);
             for(String i : bgaReport4){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1553,7 +1553,7 @@ public class PDF extends HttpServlet {
             List<String> bgaReport5 = new ArrayList<String>();
             bgaReport5 = pdfrepo.bloodGasAnalysisReport5(id);
             PdfPTable tableBGA5 = new PdfPTable(realCap);
-            PdfPCell cellBGA5 = new PdfPCell(new Paragraph("BGA5"));
+            PdfPCell cellBGA5 = new PdfPCell(new Paragraph("VBG"));
             tableBGA5.addCell(cellBGA5);
             for(String i : bgaReport5){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1563,7 +1563,7 @@ public class PDF extends HttpServlet {
             List<String> bgaReport6 = new ArrayList<String>();
             bgaReport6 = pdfrepo.bloodGasAnalysisReport6(id);
             PdfPTable tableBGA6 = new PdfPTable(realCap);
-            PdfPCell cellBGA6 = new PdfPCell(new Paragraph("BGA6"));
+            PdfPCell cellBGA6 = new PdfPCell(new Paragraph("PH"));
             tableBGA6.addCell(cellBGA6);
             for(String i : bgaReport6){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1573,7 +1573,7 @@ public class PDF extends HttpServlet {
             List<String> bgaReport7 = new ArrayList<String>();
             bgaReport7 = pdfrepo.bloodGasAnalysisReport7(id);
             PdfPTable tableBGA7 = new PdfPTable(realCap);
-            PdfPCell cellBGA7 = new PdfPCell(new Paragraph("BGA7"));
+            PdfPCell cellBGA7 = new PdfPCell(new Paragraph("PCO2"));
             tableBGA7.addCell(cellBGA7);
             for(String i : bgaReport7){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1583,7 +1583,7 @@ public class PDF extends HttpServlet {
             List<String> bgaReport8 = new ArrayList<String>();
             bgaReport8 = pdfrepo.bloodGasAnalysisReport8(id);
             PdfPTable tableBGA8 = new PdfPTable(realCap);
-            PdfPCell cellBGA8 = new PdfPCell(new Paragraph("BGA8"));
+            PdfPCell cellBGA8 = new PdfPCell(new Paragraph("HCO3-"));
             tableBGA8.addCell(cellBGA8);
             for(String i : bgaReport8){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1593,7 +1593,7 @@ public class PDF extends HttpServlet {
             List<String> bgaReport9 = new ArrayList<String>();
             bgaReport9 = pdfrepo.bloodGasAnalysisReport9(id);
             PdfPTable tableBGA9 = new PdfPTable(realCap);
-            PdfPCell cellBGA9 = new PdfPCell(new Paragraph("BGA9"));
+            PdfPCell cellBGA9 = new PdfPCell(new Paragraph("pO2"));
             tableBGA9.addCell(cellBGA9);
             for(String i : bgaReport9){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1603,7 +1603,7 @@ public class PDF extends HttpServlet {
             List<String> bgaReport10 = new ArrayList<String>();
             bgaReport10 = pdfrepo.bloodGasAnalysisReport10(id);
             PdfPTable tableBGA10 = new PdfPTable(realCap);
-            PdfPCell cellBGA10 = new PdfPCell(new Paragraph("BGA10"));
+            PdfPCell cellBGA10 = new PdfPCell(new Paragraph("sO2"));
             tableBGA10.addCell(cellBGA10);
             for(String i : bgaReport10){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1613,7 +1613,7 @@ public class PDF extends HttpServlet {
             List<String> bgaReport11 = new ArrayList<String>();
             bgaReport11 = pdfrepo.bloodGasAnalysisReport11(id);
             PdfPTable tableBGA11 = new PdfPTable(realCap);
-            PdfPCell cellBGA11 = new PdfPCell(new Paragraph("BGA11"));
+            PdfPCell cellBGA11 = new PdfPCell(new Paragraph("BE"));
             tableBGA11.addCell(cellBGA11);
             for(String i : bgaReport11){
             PdfPCell cells = new PdfPCell(new Paragraph(i));
@@ -1637,6 +1637,12 @@ public class PDF extends HttpServlet {
             PdfPTable table16 = new PdfPTable(1);
             PdfPCell cell505 = new PdfPCell(new Paragraph("Problems",FontFactory.getFont(FontFactory.TIMES_ROMAN,25, Font.BOLD, BaseColor.BLACK)));
             table16.addCell(cell505);
+            
+            PdfPTable table26 = new PdfPTable(2);
+            PdfPCell cell506 = new PdfPCell(new Paragraph("Current Problems",FontFactory.getFont(FontFactory.TIMES_ROMAN,15, Font.BOLD, BaseColor.BLACK)));
+            PdfPCell cell507 = new PdfPCell(new Paragraph("Past Problems",FontFactory.getFont(FontFactory.TIMES_ROMAN,15, Font.BOLD, BaseColor.BLACK)));
+            table26.addCell(cell506);
+            table26.addCell(cell507);
             
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             PdfPTable table17 = new PdfPTable(2);
@@ -1736,6 +1742,7 @@ public class PDF extends HttpServlet {
              doc.add(tableBGA11);
              
              doc.add(table16);
+             doc.add(table26);
              doc.add(table17);
              doc.add(table18);
              

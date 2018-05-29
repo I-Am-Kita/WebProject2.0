@@ -36,7 +36,7 @@ public List<String> getAllUsers(){
     List<String> userList = new ArrayList<String>();
     try{
         DbConnection connection = new DbConnection();
-        ResultSet data = connection.getData("SELECT * FROM user");
+        ResultSet data = connection.getData("SELECT * FROM user WHERE user.m_type !=Super_user");
         System.out.println(connection);
     while(data.next()){
         userList.add("<td>"+data.getString(1)+"</td><td>"+data.getString(2)+"</td><td>"+data.getString(3)+"</td><td>"+data.getString(4)+"</td><td>"+data.getString(5)+"</td><td>"+data.getString(6)+"</td><td>"+data.getString(7)+"</td><td><a href=\"viewUser.jsp?id="+data.getString(1)+"\" />"+"View"+"</td><td><a href=\"updateUser.jsp?id="+data.getString(1)+"&initials="+data.getString(2)+"&surname="+data.getString(3)+"&tel_no="+data.getString(4)+"&email="+data.getString(5)+"&password="+data.getString(6)+"&m_type="+data.getString(7)+"\" />"+"Edit"+"<td class=\"td1\"><a href=\"deleteUser.jsp?id="+data.getString(1)+"\" onclick=\"return confirm_alert(this);\"/>"+"Delete"+"</td></td>");
@@ -81,7 +81,7 @@ public List<String> getUserByEmail(String email){
     List<String> userList = new ArrayList<String>();
     try{
         DbConnection connection = new DbConnection();
-        ResultSet data = connection.getData("SELECT * FROM user WHERE user.email='"+email+"'");
+        ResultSet data = connection.getData("SELECT * FROM user WHERE user.email='"+email+"' AND user.m_type !=Super_user");
         System.out.println(connection);
     while(data.next()){
         userList.add("<div class=\"divtext\"> NIC NO    :   " +data.getString(1)+ "</div><div class=\"divtext\">  INITIALS         :   "+data.getString(2)+"</div><div class=\"divtext\">  SURNAME   :   "+data.getString(3)+"</div><div class=\"divtext\">  PHONE NO   :   "+data.getString(4)+"</div><div class=\"divtext\">EMAIL   :   "+data.getString(5)+"</div><div class=\"divtext\">  PASSWORD   :   "+data.getString(6)+"</div><div class=\"divtext\">  USER TYPE   :   "+data.getString(7)+"</div>");
@@ -97,7 +97,7 @@ public List<String> getUser(int nic_no){
     List<String> userList = new ArrayList<String>();
     try{
         DbConnection connection = new DbConnection();
-        ResultSet data = connection.getData("SELECT * FROM user WHERE user.nic_no='"+nic_no+"'");
+        ResultSet data = connection.getData("SELECT * FROM user WHERE user.nic_no='"+nic_no+"' AND user.m_type !=Super_user");
         System.out.println(connection);
     while(data.next()){
         userList.add("<div class=\"divtext\"> NIC NO    :   " +data.getString(1)+ "</div><div class=\"divtext\">  INITIALS         :   "+data.getString(2)+"</div><div class=\"divtext\">  SURNAME   :   "+data.getString(3)+"</div><div class=\"divtext\">  PHONE NO   :   "+data.getString(4)+"</div><div class=\"divtext\">EMAIL   :   "+data.getString(5)+"</div><div class=\"divtext\">  PASSWORD   :   "+data.getString(6)+"</div><div class=\"divtext\">  USER TYPE   :   "+data.getString(7)+"</div>");

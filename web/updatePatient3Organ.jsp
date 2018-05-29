@@ -249,12 +249,12 @@
                     e.printStackTrace();
                 }
                 %>
-                
-                        </div>
-                 <div><a href="searchPatientByOrganTypeResults.jsp?&o_type=<%  String o_type = request.getParameter("organ"); 
+                <div><a href="searchPatientByOrganTypeResults.jsp?&o_type=<%  String o_type = request.getParameter("organ"); 
                                                 out.println(o_type);%>&start=<%   String start = request.getParameter("start");
                                                 out.println(start);
-                                                %>"><button class="button">Back</button></a></div> 
+                                                %>"><button class="button">Back</button></a></div>
+                        </div>
+                  
               
             </div>
         </div>
